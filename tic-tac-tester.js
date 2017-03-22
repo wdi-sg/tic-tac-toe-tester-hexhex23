@@ -71,6 +71,7 @@ function simulateGame (testTitle, moves, winner) {
   for (var i = 0; i < moves.length; ++i) {
     expect('gameOver should return before a valid turn', isGameOver(), false)
     expect('playTurn should allow move to ' + moves[i], playTurn(moves[i]), true)
+    //if the index is occupied, player should not be able to select grid
     expect('playTurn should not allow move to same square', playTurn(moves[0]), false)
   }
 

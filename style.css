@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+.grid {
+    width: 80px;
+    height: 80px;
+    border: 5px solid green;
+    margin: 3px;
+}
+
+.Area {
+    width:300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
