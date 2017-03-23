@@ -44,9 +44,5 @@ function restart () {
     else if (player === 2) {$(this).text('O')}
     var gridValue = $(this).attr('id')
     playTurn(gridValue)
-<<<<<<< HEAD
-=======
-    console.log(grid)
->>>>>>> master
   })
 })
