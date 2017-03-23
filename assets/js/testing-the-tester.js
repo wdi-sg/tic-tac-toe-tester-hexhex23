@@ -51,17 +51,17 @@ function whoWon () {
     return currentPlayer
   } else if(sum === 13) {
     return 3
-  } else {
+  } else if (grid[index] === null){
     return 0
   }
 } whoWon ()
 
-$("document").ready(function() {
-  $( ".grid" ).click(function() {
-    alert("hi");
-    playTurn()
-    var attr = $("this").attr("id")
-    grid[attr].push(currentPlayer)
-    console.log(grid)
-  })
-})
+// $("document").ready(function() {
+//   $( ".grid" ).click(function() {
+//     alert("hi");
+//     playTurn()
+//     var attr = $("this").attr("id")
+//     grid[attr].push(currentPlayer)
+//     console.log(grid)
+//   })
+// })
