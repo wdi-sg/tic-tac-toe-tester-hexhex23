@@ -39,16 +39,11 @@ function restart () {
   player = 1
 }
 
-//var text = document.getElementById('#0').textContent = 'X';
-
   $( ".grid" ).click(function() {
-
-    if (player === 1) {alert("X" + player)}
-    else if (player === 2) {alert("Y" + player)}
+    if (player === 1) {$(this).text('X')}
+    else if (player === 2) {$(this).text('O')}
     var gridValue = $(this).attr('id')
     playTurn(gridValue)
-
-    // var attr = $("this").attr("id")
     console.log(grid)
   })
 })
