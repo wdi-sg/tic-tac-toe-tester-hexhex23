@@ -1,6 +1,10 @@
+$("document").ready(function() {
+
 var grid = [null, null, null, null, null, null, null, null, null]
 var player = 1
+
 function playTurn (index) {
+  console.log('entered');
   if (grid[index] || isGameOver()) {
     return false
   } else {
@@ -35,14 +39,16 @@ function restart () {
   player = 1
 }
 
+//var text = document.getElementById('#0').textContent = 'X';
 
+  $( ".grid" ).click(function() {
 
-// $("document").ready(function() {
-//   $( ".grid" ).click(function() {
-//     alert("hi");
-//     playTurn()
-//     var attr = $("this").attr("id")
-//     grid[attr].push(currentPlayer)
-//     console.log(grid)
-//   })
-// })
+    if (player === 1) {alert("X" + player)}
+    else if (player === 2) {alert("Y" + player)}
+    var gridValue = $(this).attr('id')
+    playTurn(gridValue)
+
+    // var attr = $("this").attr("id")
+    console.log(grid)
+  })
+})

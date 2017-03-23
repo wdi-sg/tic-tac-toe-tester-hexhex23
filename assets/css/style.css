@@ -13,5 +13,8 @@ html, body {
     width:300px;
     display: flex;
     flex-wrap: wrap;
+}
 
+h1 {
+  font-family: "Verdana", sans-serif;
 }
